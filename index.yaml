@@ -28,3 +28,15 @@
 - url: github:thebennos/model-gallery/manticore-chat-pyg-guanaco.yaml
   name: manticore-chat-pyg-guanaco
   license: other
+
+# starcoder
+
+- url: github:thebennos/model-gallery/starcoder.yaml
+  name: starcoder
+  license: other
+
+# bigtrans
+
+- url: github:thebennos/model-gallery/bigtrans.yaml
+  name: bigtrans
+  license: other
