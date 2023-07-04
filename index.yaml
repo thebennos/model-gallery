@@ -1,0 +1,30 @@
+## Whisper
+- url: "github:thebennos/model-gallery/whisper-base.yaml"
+  name: "whisper-1"
+  license: other
+## Bert embeddings
+- url: "github:thebennos/model-gallery/bert-embeddings.yaml"
+  name: "bert-embeddings"
+  license: other
+- url: "github:thebennos/model-gallery/bert-embeddings.yaml"
+  name: "text-embedding-ada-002"
+  license: other
+## Stable Diffusion
+- url: github:thebennos/model-gallery/stablediffusion.yaml
+  name: stablediffusion
+  license: other
+# samantha
+
+- url: github:thebennos/model-gallery/samantha.yaml
+  name: samantha
+  license: other
+# mpt-7b-instruct.yaml
+
+- url: github:thebennos/model-gallery/mpt-7b-instruct.yaml
+  name: mpt7-instruct
+  license: other
+
+# manticore-chat-pyg-guanaco
+- url: github:thebennos/model-gallery/manticore-chat-pyg-guanaco.yaml
+  name: manticore-chat-pyg-guanaco
+  license: other
