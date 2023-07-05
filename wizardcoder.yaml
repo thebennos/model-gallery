@@ -1,0 +1,25 @@
+name: "WizardCoder"
+
+description: |
+    WizardCoder Coding Co-Pilot.
+
+urls:
+- https://huggingface.co/TheBloke/WizardCoder-15B-1.0-GGML
+license: "N/A"
+
+# https://huggingface.co/TheBloke/WizardCoder-15B-1.0-GGML/resolve/main/WizardCoder-15B-1.0.ggmlv3.q5_1.bin
+##
+# SHA256: 1219d9fc6d51901d9a1e58e3cb7f03818d02a1d0ab2d070b4cbabdefeb7d0363
+# Pointer size: 136 Bytes
+# Size of remote file: 14.3 GB
+
+files:
+    - filename: "WizardCoder-15B-1.0.ggmlv3.q5_1.bin"
+      sha256: "1219d9fc6d51901d9a1e58e3cb7f03818d02a1d0ab2d070b4cbabdefeb7d0363"
+      uri: "https://huggingface.co/TheBloke/WizardCoder-15B-1.0-GGML/resolve/main/WizardCoder-15B-1.0.ggmlv3.q5_1.bin"
+# we use the 5.1 quantized version
+
+prompt_templates:
+- name: "code-completion"
+  content: |
+       {{.Input}}
