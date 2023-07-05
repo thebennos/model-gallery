@@ -1,0 +1,44 @@
+name: "Bigtrans"
+
+description: |
+    Bigtrans for translation from and to over 100 languages
+
+license: "N/A"
+config_file: |
+    parameters:
+      model: bigtrans
+      top_k: 80
+      temperature: 0.2
+      top_p: 0.5
+    context_size: 2048
+    template:
+      translation: translation
+
+#SHA256: 983a4e5af756381e59ce0a8686eddcfd862cee7749f4e97c5c4da80efedd543a
+# Pointer size: 135 Bytes
+# Size of remote file: 8.28 GB
+# https://huggingface.co/TheBloke/BigTrans-13B-GGML/resolve/main/bigtrans-13b.ggmlv3.q4_1.bin
+files:
+    - filename: "bigtrans-13b.ggmlv3.q5_1.bin"
+      sha256: "8cabd913e9daf1349b3fe2537082426a348c446f8b322eced650dfedef2c23a3"
+      uri: "https://huggingface.co/TheBloke/BigTrans-13B-GGML/resolve/main/bigtrans-13b.ggmlv3.q5_1.bin"
+
+#SHA256: 8cabd913e9daf1349b3fe2537082426a348c446f8b322eced650dfedef2c23a3
+#Pointer size: 135 Bytes
+#Size of remote file: 9.93 GB
+# https://huggingface.co/TheBloke/BigTrans-13B-GGML/resolve/main/bigtrans-13b.ggmlv3.q5_1.bin
+
+
+prompt_templates:
+
+### Instruction: please translate the following into French: Large language models are the future
+### Response:
+
+- name: "translation"
+  content: |
+    Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+    ### Instruction:
+    {{.Input}}
+
+    ### Response:
